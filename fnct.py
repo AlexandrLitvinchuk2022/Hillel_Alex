@@ -31,3 +31,21 @@ def listsum(numlist):
 
 
 print(listsum([1, 3, 5, 7, 9]))
+
+
+########################### Декоратор
+def main_decor(func_to_decor):
+    print("Помидор")
+    def warapper():
+        print("Сир")
+        func_to_decor()
+        #print(" ")
+    print("Мясо")
+    return warapper
+
+
+@main_decor
+def main_func():
+    print('Хлеб')
+
+main_func()
