@@ -13,7 +13,7 @@ print('Summa:', total)
 N = int(input("Enter numbers: ")) # Можем использовать N = (123456) ## Створи три функції, які обчислюють суму чисел у списку з while-циклом
 summ = 0
 while N !=0:
-    p = N % 10
+    p = N % 10  
     summ = summ + p
     N = N // 10
 print(summ)
