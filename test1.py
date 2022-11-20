@@ -1,15 +1,25 @@
-def main_decor(func_to_decor):
-    print("Помидор")
-    def warapper():
-        print("Сир")
-        func_to_decor()
-        #print(" ")
-    print("Мясо")
-    return warapper
+# import time as new_time_name
+# from random import random, randint as custom_randint
+#
+#
+# print(f"{random()=}")
+# print(f"{custom_randint(0, 100)=}")
+# print(f"{new_time_name.time()=}")
+#
+# import math
+#
+# x = math.factorial(1200)
+# print(x)
 
+import requests
 
-@main_decor
-def main_func():
-    print('Хлеб')
+# def get_name():
+#     print(f"{__name__=} inside function")
+# if __name__ == '__main__':
+#     get_name()
 
-main_func()
+from name_of_your_module import get_name
+
+if __name__ == '__main__':
+    get_name()
+    print(f"I'm your Father, bcs my {__name__=}")
